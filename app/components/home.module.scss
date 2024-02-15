@@ -1,7 +1,7 @@
 @mixin container {
   background-color: var(--white);
   border: var(--border-in-light);
-  border-radius: 20px;
+  // border-radius: 5px;
   box-shadow: var(--shadow);
   color: var(--black);
   background-color: var(--white);
@@ -146,15 +146,26 @@
 }
 
 .sidebar-title {
-  font-size: 20px;
+  // margin: auto;
+  text-align: center;
+  // margin: 0 auto;
+  // padding-bottom: 5%;
+  font-size: 26px;
   font-weight: bold;
   animation: slide-in ease 0.3s;
+  color: var(--href-color);
 }
 
 .sidebar-sub-title {
   font-size: 12px;
   font-weight: 400;
   animation: slide-in ease 0.3s;
+  text-align: center;
+}
+
+.no-underline{
+  text-decoration: none;
+  color: var(--href-color)
 }
 
 .sidebar-body {

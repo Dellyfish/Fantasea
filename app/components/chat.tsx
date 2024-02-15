@@ -1169,7 +1169,8 @@ function _Chat() {
                         ></IconButton>
                       </div>
                       {isUser ? (
-                        <Avatar avatar={config.avatar} />
+                        // <Avatar avatar={config.avatar} />
+                        <div className="user-avatar-none"></div>
                       ) : (
                         <>
                           {["system"].includes(message.role) ? (
