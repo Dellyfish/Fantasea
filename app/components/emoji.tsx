@@ -42,7 +42,7 @@ export function Avatar(props: { model?: ModelType; avatar?: string }) {
         ) : ( */}
         <BotIcon
           className={`user-avatar ${
-            config.theme === "light" ? "light-avatar" : "dark-avatar"
+            config.theme != "dark" ? "light-avatar" : "dark-avatar"
           }`}
         />
         {/* )} */}

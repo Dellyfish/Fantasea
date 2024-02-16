@@ -47,6 +47,43 @@ export const CN_MASKS: BuiltinMask[] = [
     createdAt: 1688899480510,
   },
   {
+    avatar: "1f423",
+    name: "Echarts助手",
+    context: [
+      {
+        id: "Echarts-0",
+        role: "system",
+        content: `根据需求，直接返回提供兼容5.2.1版本的ECharts options符合格式的JSON字符串,回复格式如下:{
+          "title": {
+          "left": 'center'
+          },
+          "tooltip": {
+          },
+          "legend": {
+          "orient": 'vertical',
+          "left": 'left'
+          },
+          "series": [],
+          ...
+          }，不需要说明解释返回内容，请严格遵循json语法返回。`,
+        date: "",
+      },
+    ],
+    modelConfig: {
+      model: "gpt-3.5-turbo",
+      temperature: 0.5,
+      max_tokens: 2000,
+      presence_penalty: 0,
+      frequency_penalty: 0,
+      sendMemory: true,
+      historyMessageCount: 4,
+      compressMessageLengthThreshold: 1000,
+    },
+    lang: "cn",
+    builtin: true,
+    createdAt: 1688899482222,
+  },
+  {
     avatar: "1f638",
     name: "文案写手",
     context: [
