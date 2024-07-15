@@ -155,12 +155,15 @@ export function SideBar(props: { className?: string }) {
     >
       <div className={styles["sidebar-header"]} data-tauri-drag-region>
         <div className={styles["sidebar-title"]} data-tauri-drag-region>
-          RDC Chatbox
+          🧊Fantasea
         </div>
         <div className={styles["sidebar-sub-title"]}>
           Dev by{" "}
-          <a className={styles["no-underline"]} href="mailto:1070642765@qq.com">
-            @Zhuocheng.Lai
+          <a
+            className={styles["no-underline"]}
+            href="https://github.com/Dellyfish"
+          >
+            @DellyFish
           </a>
           &nbsp;
         </div>
